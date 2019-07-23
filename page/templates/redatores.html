@@ -1,0 +1,18 @@
+{% extends "base.html"%}
+
+{% block titulo %}
+    Redatores
+{% endblock %}
+
+{% block conteudo %}
+    {% if redatores %}
+        <h1>{{nome}}</h1>
+        {% for redator in redatores %}
+            
+            <li>{{redator}}</li>
+        {% endfor %}
+    {% else %}
+       <h3> sem redatores :(</h3> 
+    {% endif %}
+
+{% endblock %}
